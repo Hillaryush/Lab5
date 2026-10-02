@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- (a) Title about my college -->
+  <title>MyCollege - Jain University, Bengaluru</title>
+  <style>
+    /* (b) Image in the background.
+       Put your college photo in the same folder and name it college.jpg.
+       The gradient is a fallback if the image is missing. */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                  url("college.jpg") no-repeat center center fixed,
+                  linear-gradient(135deg, #1e3c72, #2a5298);
+      background-size: cover;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    /* (c) College name large, address smaller */
+    h1 {
+      margin: 0;
+      padding-top: 30px;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+    }
+    .address {
+      font-size: 1.1rem;
+      margin: 8px 0 30px;
+    }
+
+    /* (d) Courses: each with a different color, style and typeface */
+    h2 { margin-bottom: 10px; }
+    .courses { list-style: none; padding: 0; margin: 0 auto; max-width: 700px; }
+    .courses li { margin: 12px 0; font-size: 1.6rem; }
+
+    .c1 { color: #ffd54f; font-family: "Times New Roman", serif; font-weight: bold; }
+    .c2 { color: #80deea; font-family: "Courier New", monospace; font-style: italic; }
+    .c3 { color: #ff8a80; font-family: Georgia, serif; text-decoration: underline; }
+    .c4 { color: #b9f6ca; font-family: "Comic Sans MS", cursive; font-weight: bold; font-style: italic; }
+    .c5 { color: #ea80fc; font-family: Verdana, sans-serif; text-transform: uppercase; letter-spacing: 3px; }
+    .c6 { color: #ffab40; font-family: Impact, fantasy; }
+
+    /* (e) Scrolling text bar */
+    .news {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #b71c1c;
+      color: #fff;
+      padding: 10px 0;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Jain University</h1>
+  <p class="address">
+    44/4, District Fund Road, Jayanagar 9th Block, Bengaluru, Karnataka 560069
+  </p>
+
+  <h2>Courses Offered</h2>
+  <ul class="courses">
+    <li class="c1">B.Tech Computer Science &amp; Engineering</li>
+    <li class="c2">B.Tech Artificial Intelligence &amp; Machine Learning</li>
+    <li class="c3">BBA - Bachelor of Business Administration</li>
+    <li class="c4">BCA - Bachelor of Computer Applications</li>
+    <li class="c5">B.Com - Bachelor of Commerce</li>
+    <li class="c6">MBA - Master of Business Administration</li>
+  </ul>
+
+  <marquee class="news" behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+    &#128226; Internal Assessment exams begin soon &bull; Annual Tech Fest registrations open &bull; Last date for fee payment is approaching &bull; Placement drive next month - register at the Training &amp; Placement Cell &#128226;
+  </marquee>
+
+</body>
+</html>
